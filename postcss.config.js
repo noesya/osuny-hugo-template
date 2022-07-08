@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
-var devPlugins = {},
-    productionPlugins = {
+module.exports = {
+    plugins: {
         autoprefixer: {},
         cssnano: {
             preset: 'default'
@@ -20,6 +20,12 @@ var devPlugins = {},
                     'show',
                     'active',
                     'collapsed',
+                    'h1',
+                    'h2',
+                    'h3',
+                    'h4',
+                    'h5',
+                    'h6',
                     /^dropdown/,
                     /^nav-level-/,
                     /^splide_/,
@@ -39,9 +45,9 @@ var devPlugins = {},
                     'gzoomOut'
                 ],
                 deep: [
+                    // Glightbox
                     /block-/,
                     /ratio/,
-                    // Glightbox
                     /^glightbox/,
                     /^gslide/,
                     /^desc-top/,
@@ -63,16 +69,21 @@ var devPlugins = {},
                     /__home/,
                     /__page/,
                     /__section/,
-                    /__taxonomy/,
                     /__term/,
+                    /__taxonomy/,
                     /posts/,
+                    /block-timeline/,
                     /call_to_action/,
-                    /block-timeline/
+                    /association/,
+                    /pleas/,
+                    /posts/,
+                    /challenges/,
+                    /point-de-vue/,
+                    /publications/,
+                    /actualites/,
+                    /agir-soutenir/
                 ]
             }
         }
-    };
-
-module.exports = {
-    plugins: productionPlugins
+    }
 };
