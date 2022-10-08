@@ -1,4 +1,4 @@
-# Osuny hugo template
+# Template Hugo Osuny
 
 
 ## Hugo
